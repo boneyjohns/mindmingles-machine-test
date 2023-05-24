@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mind_mingles/views/home.dart';
+import 'package:get/get.dart';
+import 'package:mind_mingles/views/homescreen/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Myhome(),
     );
   }
